@@ -1,7 +1,6 @@
 ---
 title: Agent Health solution in Azure Monitor | Microsoft Docs
 description: This article is intended to help you understand how to use this solution to monitor the health of your agents reporting directly to Log Analytics or System Center Operations Manager.
-ms.subservice: 
 ms.topic: conceptual
 author: bwren
 ms.author: bwren
@@ -75,6 +74,7 @@ A record with a type of **Heartbeat** is created.  These records have the proper
 | `SCAgentChannel` | Value is *Direct* and/or *SCManagementServer*.|
 | `IsGatewayInstalled` | If Log Analytics gateway is installed, value is *true*, otherwise value is *false*.|
 | `ComputerIP` | The public IP address of the computer. On Azure VMs, this will show the public IP if one is available. For VMs using private IPs, this will display the Azure SNAT address (not the private IP address). |
+| `ComputerPrivateIPs` | List of private IPs of the computer. |
 | `RemoteIPCountry` | Geographic location where computer is deployed.|
 | `ManagementGroupName` | Name of Operations Manager management group.|
 | `SourceComputerId` | Unique ID of computer.|

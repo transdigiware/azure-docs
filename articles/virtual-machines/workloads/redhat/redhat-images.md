@@ -2,13 +2,13 @@
 title: Overview of Red Hat Enterprise Linux images in Azure
 description: Learn about Red Hat Enterprise Linux images in Microsoft Azure.
 author: asinn826
-ms.service: virtual-machines-linux
-ms.subservice: workloads
+ms.service: virtual-machines
+ms.subservice: redhat
+ms.collection: linux
 ms.topic: article
 ms.date: 02/10/2020
-ms.author: alsin
+ms.author: mathapli
 ms.reviewer: cynthn
-
 
 ---
 
@@ -97,7 +97,7 @@ For RHEL 7.x images, there are a few different image types. The following table 
 ## RHEL 8 image types
 
 >[!NOTE]
-> Red Hat recommends using Grubby to configure kernel command line parameters in RHEL 8+. More details are available [here](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_monitoring_and_updating_the_kernel/configuring-kernel-command-line-parameters_managing-monitoring-and-updating-the-kernel).
+> Red Hat recommends using Grubby to configure kernel command line parameters in RHEL 8+. For more information, see [Chapter 5. Configuring kernel command-line parameters Red Hat Enterprise Linux 8](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_monitoring_and_updating_the_kernel/configuring-kernel-command-line-parameters_managing-monitoring-and-updating-the-kernel).
 
 Details for RHEL 8 image types are below.
 
@@ -105,6 +105,8 @@ Details for RHEL 8 image types are below.
 |----------|-------|------------|---------|--------
 |RedHat | RHEL | 8 | Concatenated values of the RHEL minor version and the date published (for example, 8.0.20191023) | These images are RHEL 8 LVM-partitioned images connected to standard Red Hat repositories.
 |RedHat | RHEL | 8-gen2 | Concatenated values of the RHEL minor version and the date published (for example, 8.0.20191024) | These images are Hyper-V Generation 2 RHEL 8 LVM-partitioned images connected to standard Red Hat repositories. For more information about Generation 2 VMs in Azure, see [Support for Generation 2 VMs on Azure](../../generation-2.md).
+|RedHat | RHEL | RHEL-SAP-APPS | Concatenated values of the RHEL minor version and the date published (for example, 8.1.2021012201) | These images are RHEL for SAP Applications images. They're entitled to access SAP Applications repositories and base RHEL repositories.
+|RedHat | RHEL | RHEL-SAP-HA | Concatenated values of the RHEL minor version and the date published (for example, 8.1.2021010602) | These images are RHEL for SAP with High Availability and Update Services images. They're entitled to access the SAP Solutions and Applications repositories and the High Availability repositories as well as RHEL E4S repositories. Billing includes the RHEL premium, SAP premium, and High Availability premium on top of the base compute fee.
 
 ## RHEL Extended Support add-ons
 

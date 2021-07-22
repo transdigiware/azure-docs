@@ -10,7 +10,7 @@ ms.devlang: java
 ms.topic: quickstart
 ms.custom: [mvc, seo-java-august2019, seo-java-september2019, mqtt, devx-track-java, devx-track-azurecli]
 ms.date: 06/21/2019
-# As a developer new to IoT Hub, I need to see how to use a back-end application to control a device connected to the hub.
+#Customer intent: As a developer new to IoT Hub, I need to see how to use a back-end application to control a device connected to the hub.
 ---
 
 # Quickstart: Control a device connected to an Azure IoT hub with Java
@@ -23,7 +23,7 @@ In this quickstart, you use a direct method to control a simulated device connec
 
 * An Azure account with an active subscription. [Create one for free](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio).
 
-* Java SE Development Kit 8. In [Java long-term support for Azure and Azure Stack](/java/azure/jdk/?view=azure-java-stable), under **Long-term support**, select **Java 8**.
+* Java SE Development Kit 8. In [Java long-term support for Azure and Azure Stack](/java/azure/jdk/), under **Long-term support**, select **Java 8**.
 
     You can verify the current version of Java on your development machine using the following command:
 
@@ -49,13 +49,13 @@ In this quickstart, you use a direct method to control a simulated device connec
 
 ## Create an IoT hub
 
-If you completed the previous [Quickstart: Send telemetry from a device to an IoT hub](quickstart-send-telemetry-java.md), you can skip this step.
+If you completed the previous [Quickstart: Send telemetry from a device to an IoT hub](../iot-develop/quickstart-send-telemetry-iot-hub.md?pivots=programming-language-java), you can skip this step.
 
 [!INCLUDE [iot-hub-include-create-hub](../../includes/iot-hub-include-create-hub.md)]
 
 ## Register a device
 
-If you completed the previous [Quickstart: Send telemetry from a device to an IoT hub](quickstart-send-telemetry-java.md), you can skip this step.
+If you completed the previous [Quickstart: Send telemetry from a device to an IoT hub](../iot-develop/quickstart-send-telemetry-iot-hub.md?pivots=programming-language-java), you can skip this step.
 
 A device must be registered with your IoT hub before it can connect. In this quickstart, you use the Azure Cloud Shell to register a simulated device.
 
